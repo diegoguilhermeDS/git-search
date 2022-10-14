@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
 }
 
 :root{
@@ -14,4 +19,25 @@
     --color-grey-6:  #A6A8A9;
     --color-grey-7:  #FFFFFF;
     --color-alert:   #C22554;
+
+    --font-size-1: 2rem;
+    --font-size-2: 1.5rem;
+    --font-size-3: 1.25rem;
+    --font-size-4: 1rem;
+    --font-size-5: 0.875rem;
+
+    --radius-1: 0.5rem;
+    --radius-2: 0.25rem;
+    --radius-img: 50%;
+
+    --width-card-repository: 23.75rem;
+    --height-card-repository: 15rem;
+
+    --height-button-1: 2.375rem;
+    --height-button-2: 1.75rem;
+
+    --gap-1: 1.688rem;
+    --gap-2: 1.313rem;
+    --gap-3: 1.25rem;
+    --gap-4: 0.75rem;
 }

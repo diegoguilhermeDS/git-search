@@ -5,11 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/globalStyles.css" />
+    <link rel="stylesheet" href="/styles/buttons.css" />
+    <link rel="stylesheet" href="/styles/radius.css" />
+    <link rel="stylesheet" href="/styles/texts.css" />
     <link rel="stylesheet" href="index.css" />
     <title>Nome do usuário Github</title>
   </head>
   <body>
-    <main></main>
+    <header>
+        <div class="container container-header">
+          <div class="container-interaction">
+            <button class="button-primary button-rosa">Email</button>
+            <button class="button-primary button-black" onclick="changeUser()">Trocar de usuário</button>
+          </div>
+        </div>
+    </header>
+    <main class="container">
+      <section class="container-list-repository">
+        <ul class="list-repositories">
+        
+        </ul>
+      </section>
+    </main>
     <script src="index.js"></script>
   </body>
 </html>

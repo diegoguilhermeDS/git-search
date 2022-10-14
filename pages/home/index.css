@@ -1,1 +1,121 @@
 /* Desenvolva sua estilização aqui...*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-x: hidden;
+    color: var(--color-grey-7);
+}
+
+.bg-rosa {
+    background-color: var(--color-brand-1);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -50%;
+}
+
+.bg-black {
+    background-color: var(--color-grey-2);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.container-principal-home {
+    width: 62.5rem;
+    height: 18.75rem;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-pag {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.875rem;
+}
+
+.info-pag > p {
+    width: 50px;
+    text-align: justify;
+}
+
+.container-recent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1.188rem;
+}
+
+.list-recent {
+    display: flex;
+    gap: 0.688rem;
+    align-items: center;
+}
+
+.profile-recent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.profile-recent:hover .text-5{
+    display: inline-block;
+}
+
+.img-recent {
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: var(--radius-img);
+    border: 1px solid #fff;
+}
+
+.container-login {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.813rem;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 19.75rem;
+    margin-left: 5.313rem;
+}
+
+.icon-search {
+    animation: searchAnimate 2s linear infinite;
+}
+
+.user-underfind {
+    color: var(--color-brand-1);
+    font-size: var(--font-size-5);
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+}
+
+@keyframes searchAnimate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

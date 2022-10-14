@@ -5,11 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/globalStyles.css" />
+    <link rel="stylesheet" href="/styles/buttons.css" />
+    <link rel="stylesheet" href="/styles/texts.css" />
+    <link rel="stylesheet" href="/styles/radius.css" />
     <link rel="stylesheet" href="index.css" />
     <title>Git Search</title>
   </head>
   <body>
-    <main></main>
+    <div class="bg-rosa"></div>
+    <div class="bg-black"></div>
+    <main class="container-principal-home">
+        <section class="info-pag">
+          <h1 class="title-1 ">Git Search</h1>
+          <span class="text-1">Encontre e se conecte com profissionais de forma rápida e fácil</span>
+          <div class="container-recent">
+            <ul class="list-recent">
+              
+            </ul>
+          </div>
+        </section>
+        <section class="container-login">
+          <h2 class="title-3">Procurar por um usuário</h2>
+          <form class="form-login">
+             <label class="text-3" for="input-login">Usuário github</label>
+             <input type="text" name="login-user" id="input-login" placeholder="Digite um usuário do github aqui..." class="input-login">
+             <button class="button-primary button-rosa radius-2 weight-3" disabled id="button-search">Ver perfil do github</button>
+          </form>
+        </section>
+    </main>
+    <script src="/pages/profile/index.js"></script>
     <script src="index.js"></script>
   </body>
 </html>

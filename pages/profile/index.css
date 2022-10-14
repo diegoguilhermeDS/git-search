@@ -1,1 +1,74 @@
 /* Desenvolva sua estilização aqui...*/
+body {
+    height: 100vh;
+    background-color: var(--color-grey-2);
+    color: var(--color-grey-7);
+}
+
+.container {
+    width: 49rem;
+    margin: 0 auto;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6.25rem;
+    margin-top: 2.5rem;
+    margin-bottom: 4.375rem;
+}
+
+.container-infor-user {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.container-infor-user > img {
+    width: 5rem;
+    border-radius: var(--radius-img);
+    border: 2px solid var(--color-brand-2);
+}
+
+.infor-user {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+}
+
+.infor-user > span {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.container-interaction {
+    display: flex;
+    gap: 0.875rem;
+}
+
+.list-repositories {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1.375rem;
+}
+
+.repository {
+    width: 23.75rem;
+    height: 15.188rem;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-1);
+    padding: 2.563rem 1.688rem ;
+    display: flex;
+    flex-direction: column;
+    gap: 1.313rem;
+    
+}
+.repository:hover {
+    background-color: var(--color-grey-1);
+    border: 2px solid var(--color-grey-7);
+}
+
+.buttons-repositories {
+    display: flex;
+    gap: 0.875rem;
+}
