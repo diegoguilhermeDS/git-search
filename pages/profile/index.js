@@ -61,7 +61,7 @@ async function renderRepositoriesUser(user) {
 
 
 function changeUser() {
-    location.replace("/pages/home/index.html");
+    location.replace("./index.html");
 }
 
 
