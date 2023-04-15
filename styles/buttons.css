@@ -18,7 +18,7 @@
 }
 .button-rosa:disabled {
     opacity: 40%;
-    cursor: auto;
+    cursor: not-allowed;
 }
 .button-rosa:disabled:hover {
     background-color: var(--color-brand-2);

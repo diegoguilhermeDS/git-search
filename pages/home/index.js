@@ -1,6 +1,5 @@
 /* Desenvolva sua lógica aqui...*/
 
-
 function interationForm() {
     let inputUserName = document.getElementById("input-login")
     let buttonSearchUser = document.getElementById("button-search")
@@ -9,10 +8,9 @@ function interationForm() {
         buttonSearchUser.disabled = false
     })
 
-
     buttonSearchUser.addEventListener("click", (event) => {
         event.preventDefault()
-        let buttonSearch = event.path[0]
+        let buttonSearch = event.target
         let valueInput = inputUserName
         /* takeUserAPI(valueInput, buttonSearch) */
         searchUserGitHub(valueInput, buttonSearch)
@@ -126,7 +124,7 @@ function renderRecentUser(list) {
 
             profileRecent.innerHTML = `
             <a href="#" onclick="showProfileRecent(event)">
-                <img class="img-recent" src="${user.img}" alt="foto de perfil">
+                <img class="img-recent" src="${user.img}" alt="${user.user}">
             </a>
             <span class="text-5">Acessar este perfil</span>
             `
@@ -140,10 +138,9 @@ renderRecentUser(listRecent)
 
 
 function showProfileRecent(event) {
-    let pathId = event.path[2].id
-    const findUser = listRecent.find(user => user.userName === pathId)
+    let username = event.target.alt
 
-    SetUserProfileCurrent(findUser.user)
+    SetUserProfileCurrent(username)
     
     setTimeout(() => {
         location.replace("/pages/profile/index.html");
