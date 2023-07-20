@@ -20,7 +20,7 @@
   </a>
 </p>
 
-<div align="center"><img width="1000" src=""></div>
+<div align="center"><img width="1000" src="https://github.com/diegoguilhermeDS/git-search/blob/acbd1d75b3606686c9670f3c96560861fbe0f61d/assets/img/screen.png"></div>
 
 <h4 align="center"> 
 	🚧  Git Search 🔎 Concluído🚀 🚧
