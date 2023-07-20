@@ -61,14 +61,27 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.313rem;
-    
 }
 .repository:hover {
     background-color: var(--color-grey-1);
     border: 2px solid var(--color-grey-7);
+    transition: all 1s ease-in-out;
 }
 
 .buttons-repositories {
     display: flex;
     gap: 0.875rem;
+}
+
+
+.description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical; 
+}
+
+.hidden {
+    display: none;
 }
