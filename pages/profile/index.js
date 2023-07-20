@@ -10,6 +10,7 @@ async function renderInforUser(user) {
         }
 
         let data = await resp.json()
+        console.log(data)
         let {avatar_url, bio, name} = data
         
         let containerHeader = document.querySelector(".container-header")
@@ -36,7 +37,7 @@ async function renderRepositoriesUser(user) {
         
         let data = await resp.json()
         data.map(respo => {
-            const {name, description, html_url} = respo
+            const {name, description, html_url, homepage} = respo
             
             let listRepositories = document.querySelector(".list-repositories")
 
@@ -45,10 +46,10 @@ async function renderRepositoriesUser(user) {
 
             repository.innerHTML = `
                 <h2 class="title-3">${name}</h2>
-                <p class="text-4">${description}</p>
+                <p class="text-4 description">${description ? description : "Sem descrição"}</p>
                 <div class="buttons-repositories">
-                    <a class="button-second-rosa" href="${html_url}" target="_blank">Repositório</a>
-                    <button class="button-second-rosa">Demo</button>
+                    <a class="button-second button-rosa" href="${html_url}" target="_blank">Repositório</a>
+                    <a class="button-second-rosa ${homepage ? "" : "hidden"}" href="${homepage}" target="_blank">Demo</a>
                 </div>
             `
 
